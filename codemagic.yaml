@@ -1,4 +1,16 @@
 workflows:
+  test:
+    triggering:
+      events:
+        - pull_request
+    name: Build
+    environment:
+      groups:
+        - test_sec
+      flutter: stable
+    scripts:
+      - name: Say Bye
+        script: echo "Bye, bye! $TEST_SEC1"
   build:
     triggering:
       events:
