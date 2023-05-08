@@ -10,4 +10,4 @@ workflows:
       flutter: stable
     scripts:
       - name: Say Hello
-        script: echo "Hello World! $TEST_SEC1"
+        script: echo "No Hello World! $TEST_SEC1"
