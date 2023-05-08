@@ -1,0 +1,13 @@
+workflows:
+  build:
+    triggering:
+      events:
+        - pull_request
+    name: Build
+    environment:
+      groups:
+        - test_sec
+      flutter: stable
+    scripts:
+      - name: Say Hello
+        script: echo "Hello World! $TEST_SEC1"
